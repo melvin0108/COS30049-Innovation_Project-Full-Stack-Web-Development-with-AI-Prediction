@@ -6,16 +6,16 @@
 ![Homepage](homepage.png)
 
 ### Fareflight Prediction - Part 1
-![Fareflight Prediction Part 1](.\fareflight_prediction-part1.png)
+![Fareflight Prediction Part 1](fareflight_prediction-part1.png)
 
 ### Fareflight Prediction - Part 2
-![Fareflight Prediction Part 2](.\fareflight_prediction-part2.png)
+![Fareflight Prediction Part 2](fareflight_prediction-part2.png)
 
 ### Delayflight Prediction - Part 1
-![Delayflight Prediction Part 1](.\delayflight_prediction-part1.png)
+![Delayflight Prediction Part 1](delayflight_prediction-part1.png)
 
 ### Delayflight Prediction - Part 2
-![Delayflight Prediction Part 2](.\delayflight_prediction-part2.png)
+![Delayflight Prediction Part 2](delayflight_prediction-part2.png)
 ## File structure
 
 The project folder is organized into two main subfolders: backend and flightforesight (frontend).
