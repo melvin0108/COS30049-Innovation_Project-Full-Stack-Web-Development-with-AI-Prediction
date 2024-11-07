@@ -1,5 +1,21 @@
 # COS30049 - Computing Technology Innovation Project (CAA Flightforesight)
 
+# Project Screenshots
+
+### Homepage
+![Homepage](homepage.png)
+
+### Fareflight Prediction - Part 1
+![Fareflight Prediction Part 1](.\fareflight_prediction-part1.png)
+
+### Fareflight Prediction - Part 2
+![Fareflight Prediction Part 2](.\fareflight_prediction-part2.png)
+
+### Delayflight Prediction - Part 1
+![Delayflight Prediction Part 1](.\delaylight_prediction-part1.png)
+
+### Delayflight Prediction - Part 2
+![Delayflight Prediction Part 2](.\delaylight_prediction-part2.png)
 ## File structure
 
 The project folder is organized into two main subfolders: backend and flightforesight (frontend).
