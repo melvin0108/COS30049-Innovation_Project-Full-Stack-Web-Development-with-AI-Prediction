@@ -1,0 +1,243 @@
+/* src/components/components.jsx */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #84A98C;
+  --secondary-color: #52796F;
+  --tertiary-color: #354F52;
+  --light-bg: #CAD2C5;
+  --dark-bg: #2F3E46;
+  --text-color: #354F52;
+  --hover-color: #52796F;
+}
+
+/* Navbar Styles */
+.navbar-container {
+  background-color: var(--light-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #5a7660;
+}
+
+.navbar-button {
+  margin-right: 1rem;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Override active/focus state */
+.navbar-button:focus,
+.navbar-button:active {
+  background-color: var(--primary-color); /* Change to match your theme */
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: none; /* Remove blue box-shadow */
+  outline: none; /* Remove blue outline */
+}
+
+/* Remove Bootstrap's blue focus on active buttons */
+.navbar-button:focus {
+  background-color: var(--primary-color);
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 2px solid var(--primary-color);
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-text p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: var(--light-bg);
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: var(--hover-color);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-text {
+    margin-bottom: 10px;
+  }
+}
+
+/* About Page Styles */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--light-bg);
+}
+
+.about-team-description {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-team-description h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.about-team-description p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.about-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-team-card-link {
+  text-decoration: none;
+}
+
+.about-team-card {
+  width: 18rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.about-team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-team-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  border: 3px solid var(--tertiary-color);
+}
+
+.about-university-badge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.btn-outline-primary {
+  color: #5a7660;
+  font-weight: bold;
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Remove blue focus and active states for all buttons */
+button:focus, a.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+button:active, a.btn:active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+/* Hover Effects for all buttons */
+button, a.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Home Page styles */
+.custom-textfield .MuiOutlinedInput-root {
+  /* Default outline color */
+  fieldset {
+    border-color: var(--primary-color);  /* Match the navbar's primary color */
+  }
+  
+  /* Outline color on hover */
+  &:hover fieldset {
+    border-color: var(--primary-color);  /* Same color on hover */
+  }
+
+  /* Outline color when focused */
+  &.Mui-focused fieldset {
+    border-color: var(--primary-color);  /* Same color when focused */
+  }
+}
+
